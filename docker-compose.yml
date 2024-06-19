@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: "wensky/provable"
+    container_name: "provable"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/home/laravel/storage:/var/www/html/storage"
+      - "/etc/localtime:/etc/localtime"
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge

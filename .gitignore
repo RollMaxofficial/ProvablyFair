@@ -1,0 +1,21 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/conf
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+# .env
+# .env.backup
+# .env.production
+Dockerfile
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet   docker run -itd -p 80:80 provable-web:tag  
+/.idea  
+/.vscode
